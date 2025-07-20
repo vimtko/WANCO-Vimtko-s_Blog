@@ -1,0 +1,119 @@
+/*
+This Python Code Comes from a Homework from University
+the objective was to make a Menu that could hold information about tasks
+
+The Comments come in spanish because of teacher preferences
+There are tasks pre-loaded
+No UI
+HCO= 1.5
+*/
+
+
+#TODO: Definir funciones a utilizar
+
+#TODO: Mostrar menú y opciones
+def mostrar_menu():
+    print("#################################################################")
+    print("Bienvenido al SuperOrdenadorDeTareas5000")
+    print("#################################################################")
+    print("Porfavor seleccione de las siguienes opciones")
+    print("1) Agregar Tarea")
+    print("2) Listar Tareas")
+    print("3) Completar Tarea Tarea")
+    print("4) Salir")
+    pass
+
+#TODO: Agregar tareas a listado, crear sin condicion completada
+def agregar_tarea(tareas):
+    print("#################################################################")
+    print("Agregador de Tareas")
+    descripcion = input("Describa Nueva tarea: ")
+    nueva_tarea = {"tarea": descripcion, "completada": False}
+    tareas.append(nueva_tarea)
+    print("Tarea agregada correctamente.")
+    pass
+
+#TODO: Print array de tareas
+def listar_tareas(tareas):
+    print("#################################################################")
+    print("TAREAS PENDIENTES:")
+    for i, tarea in enumerate(tareas):
+        if not tarea["completada"]:
+            print(f"{i + 1}. {tarea['tarea']}")
+
+    print("\nTAREAS COMPLETADAS:")
+    for i, tarea in enumerate(tareas):
+        if tarea["completada"]:
+            print(f"{i + 1}. {tarea['tarea']}")
+    print("#################################################################")
+    pass
+
+#TODO: Cambiar las tareas a completadas, agregar condición
+def marcar_completada(tareas):
+    print("#################################################################")
+    print("MARCAR TAREA COMO COMPLETADA")
+    
+    # Filtrar tareas pendientes
+    tareas_pendientes = [tarea for tarea in tareas if not tarea["completada"]]
+
+    if not tareas_pendientes:
+        print("No hay tareas pendientes para completar.")
+        return
+
+    # Mostrar las tareas pendientes con índice visible
+    for i, tarea in enumerate(tareas_pendientes):
+        print(f"{i + 1}. {tarea['tarea']}")
+
+    try:
+        seleccion = int(input("Seleccione el número de la tarea que desea marcar como completada: "))
+        if 1 <= seleccion <= len(tareas_pendientes):
+            tarea_seleccionada = tareas_pendientes[seleccion - 1]
+            tarea_seleccionada["completada"] = True
+            print(f"La tarea '{tarea_seleccionada['tarea']}' fue marcada como completada.")
+        else:
+            print("Número fuera de rango.")
+    except ValueError:
+        print("Entrada inválida. Por favor ingrese un número.")
+    print("#################################################################")
+    pass
+
+
+def salir():
+    print("#################################################################")
+    print("Gracias por usar el SuperOrdenardorDeTareas5000")
+    print("#################################################################")
+    pass
+
+#TODO: Ingresar tareas pre hechas
+def main():
+    tareas = [
+    {"tarea": "Salir a jugar", "completada": False},
+    {"tarea": "Ir al cine", "completada": False},
+    {"tarea": "Hacer trabajo de la Universidad", "completada": False},
+    {"tarea": "Tomar farmacos", "completada": True},
+    {"tarea": "Sacarse un moco", "completada": True},
+    {"tarea": "Ver la clase de la Universidad", "completada": True}
+    ]
+
+#TODO: Ciclo de While del menú
+    while True:
+        mostrar_menu()
+        opcion = input("Seleccione una opción: ")
+        
+        if opcion == '1':
+            agregar_tarea(tareas)
+        elif opcion == '2':
+            listar_tareas(tareas)
+        elif opcion == '3':
+            marcar_completada(tareas)
+        elif opcion == '4':
+            salir()
+            break
+        else:
+            print("Opción inválida. Por favor intente de nuevo.")
+
+#TODO best Practices
+if __name__ == "__main__":
+    main()
+
+
