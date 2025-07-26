@@ -1,13 +1,51 @@
-#About This Vault
+###### Wanco Solutions Presents:
+
+# WANCO: Workflow, Analytics, Networks, Control, Operations and solutions a Vimtko's Blog
+
+**Portfolio Website** This website is focused on my blog where i upload the things i have done around techonology, automatization, Administration, Personal Logs and work i have done with various products
+
+## Link to website:
+
 ---
-This is a repository based on the different proyects that i have done, in every folder you will find a README explaining the proyect in further detail.
-Mainly this is a repository made for work related reasons
 
+## What can you find in the website
 
-## This Vault has Different categories of tasks and proyects that i have done in my self taught journey across the years
+-Cooking recipes
+-Coding tips and how to
+-Notes from different courses and techonology
+-Photos of the proyects that i have worked with
+
 ---
-* [UC] University Stuff / Courses Stuff (Things that i got from a learning place or any page that im learning from)
-* [Self] Self taught code (or any code that comes from me without any other guide, mainly giving solutions to pre-made problems)
-* [Show] Things that i do to Show-off my code capabilities
 
+## Website Structure
+- Public/ 
+- css/
+- js/
+- Logs/
+- index.html
+- Blog.html
 
+## Tecnologia Utilizada
+
+- HTML5 + CSS3 + JavaScript
+- GitHub Pages (hosting)
+- Jekyll (To transform from obsidian markdown to html)
+
+## TODO
+- First launch
+- Update proyects
+- Integrate obsidian publish
+
+--
+## Credits
+
+- Designed by: Vimtko
+- Used template: https://github.com/rjshkhr (Thanks for the Opensource code)
+
+---
+
+## 🧾 Licence agreement
+
+MIT License. Puedes usar, modificar y compartir este proyecto siempre que cites la autoría original.
+
+This dot is for me to get another green day in github -> .
