@@ -46,6 +46,5 @@
 
 ## 🧾 Licence agreement
 
-MIT License. Puedes usar, modificar y compartir este proyecto siempre que cites la autoría original.
-
+MIT License.
 This dot is for me to get another green day in github -> .
