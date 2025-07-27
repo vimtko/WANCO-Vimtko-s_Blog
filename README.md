@@ -36,24 +36,23 @@ This is my personal website and technical blog where I document my journey in te
 # Technologies Used    
 - HTML5, CSS3, and JavaScript
 - GitHub Pages for free hosting
--(Planned) Jekyll for transforming Markdown (from Obsidian) into HTML
+- (Planned) Jekyll for transforming Markdown (from Obsidian) into HTML
 
 ---
 
 ## TODOs
--Initial launch of the site (DONE)
--Add full project gallery (instrumentation, automation work, etc.)
--Integrate study notes from Obsidian
--Improve mobile responsiveness
--Add RSS or blog feed system
+- Initial launch of the site (DONE)
+- Add full project gallery (instrumentation, automation work, etc.)
+- Integrate study notes from Obsidian
+- Improve mobile responsiveness
+- Add RSS or blog feed system
 
 ## Credits
-Designed and built by: Vimtko
-Template base: Cleanfolio Minimal — thanks for the great open-source code!
+- Designed and built by: Vimtko
+- Template base: Cleanfolio Minimal — thanks for the great open-source code!
 
-##License
+## License
 
 This project is licensed under the MIT License.
 Feel free to use, modify, and share it — just credit the original author.
-
 This dot is just for keep my github contribution streak alive -> .
