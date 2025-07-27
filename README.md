@@ -30,7 +30,7 @@ This is my personal website and technical blog where I document my journey in te
 ├── index.html            # Homepage
 ├── Logs/                 # Folder for logs, study notes, and future Obsidian exports
 └── README.md             # This file
-
+```
 ---
 
 # Technologies Used    
